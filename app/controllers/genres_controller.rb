@@ -1,7 +1,7 @@
 class GenresController < ApplicationController
 
   def new
-    @genre = Genre.new(params.require(:genre).permit(:name))
+    @genre = Genre.new
   end
 
   def create
